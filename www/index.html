@@ -7,11 +7,105 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script>
+    $(function(){
+        //１段目
+        $("#rock").on("click", function(e){
+    		alert("グーを押しました！");
+    	});
+    	
+    	$("#paper").on("click", function(e){
+    		alert("パーを押しました！");
+    	});
+    	
+    	$("#scissors").on("click", function(e){
+    		alert("チョキを押しました！");
+    	});
+    	$("#rock").attr("disabled", "true");
+    	//
+    	
+    	
+    	//２段目
+    	$("div.box > img.rock").on("click", function(e){
+    		alert("グーを押しました！");
+    	});
+    	
+    	$("div.box > img.paper").on("click", function(e){
+    		alert("パーを押しました！");
+    	});
+    	
+    	$("div.box > img.scissors").on("click", function(e){
+    		alert("チョキを押しました！");
+    	});
+    	$("div.box > img.rock").off("click");
+    	//
+        
+        //３段目
+        $("div.box > a.button.rock").on("click", function(e){
+    		alert("グーを押しました！");
+    	});
+    	
+    	$("div.box > a.button.paper").on("click", function(e){
+    		alert("パーを押しました！");
+    	});
+    	
+    	$("div.box > a.button.scissors").on("click", function(e){
+    		alert("チョキを押しました！");
+    	});
+    	$("div.box > a.button.rock").off("click");
+        $("div.box > a.button.rock").css("opacity", "0.3");
+    	//
+	});
     </script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+	<div class="container">
+        <div class="box">
+			<input type="image" id="rock" src="rock.png" alt="グー"/>
+		</div>
+		<div class="box">
+			<input type="image" id="scissors" src="scissors.png" alt="チョキ"/>
+		</div>
+		<div class="box">
+			<input type="image" id="paper" src="paper.png" alt="パー"/>
+		</div>
+	</div>
+	    
+	<div class="container">
+		<div class="box">
+			<img class="rock" src="rock.png" alt="グー"/>
+		</div>
+		<div class="box">
+			<img class="scissors" src="scissors.png" alt="チョキ"/>
+		</div>
+		<div class="box">
+			<img class="paper" src="paper.png" alt="パー"/>
+		</div>
+	</div>
+    
+    <div class="container">
+    	<div class="box">
+			<a class="button rock"><img src="rock.png" alt="グー" /></a>
+		</div>
+		<div class="box">
+			<a class="button scissors"><img src="scissors.png" alt="チョキ"/></a>			
+		</div>
+		<div class="box">
+			<a class="button paper"><img src="paper.png" alt="パー"/></a>
+		</div>
+	</div>
+    
+    <div class="container3d">
+    	<div class="box">
+    		<img class="button rock" src="rock.png" alt="グー" />
+		</div>
+		<div class="box">
+			<img class="button scissors" src="scissors.png" alt="チョキ"/>		
+		</div>
+		<div class="box">
+			<img class="button paper" src="paper.png" alt="パー"/>
+		</div>
+	</div>
 </body>
 </html>

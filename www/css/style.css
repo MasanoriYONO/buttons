@@ -1,0 +1,53 @@
+.box{
+    float: left;
+	padding: 10px 10px 10px 10px;
+}	
+.container{
+	position: relative;
+	overflow: hidden;
+	background: #eee;
+	width: 210px;
+	height: 120px;
+	margin: 10px auto;
+}
+input{
+	width: 50px;
+	height: 100px;
+}
+img{
+    width: 50px;
+	height: 100px;
+}
+a:hover {
+    opacity: 0.6;
+}
+.container3d{
+    position: relative;
+	overflow: hidden;
+	background: #eee;
+	width: 217px;
+	height: 120px;
+	margin: 0 auto;
+}
+img.button{
+    display: inline-block;
+	padding: 0px;
+	
+	background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 80%);
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+
+img.button:hover {
+	color: #888;
+	background: linear-gradient(to bottom, #ffffff 0%, #ededed 80%);
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+img.button:active {
+	color: #555;
+	
+	background: linear-gradient(to bottom, #eee 0%, #eee 3%, #fff 4%, #e5e5e5 80%);
+	box-shadow: none;
+}
